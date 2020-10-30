@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(224, 224, 224);
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(6, 133, 120);
+    letter-spacing: 2px;
+    font-size: 2em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(6, 133, 120);
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 2px 5px;
+    border-radius: 7px;
+    background-color: rgb(6, 133, 120);
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+header {
+    background-color: rgb(211, 211, 0);
+    height: 65px;
+    width: 100%;
+}
+
+
+/* Hamburger menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 5px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 25px;
+    height: 65px;
+    left: -1.75px;
+    top: -15px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Hamburger animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(0, 2px);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(0px, -2px);
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 65px;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 65px;
+}
+
+nav .logo {
+    width: 50%;
+}
+
+nav ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    text-align: center;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: rgb(6, 133, 120);
+}
+
+/* Dark-light mode toggle */
+.pagemode {
+    position: fixed;
+    top: 40vh;
+    padding-left: 3px;
+}
+
+.pagemode span {
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 2px 5px;
+    font-size: 0.7em;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-orientation: mix;
+    height: 50px;
+    text-align: center;
+}
+
+.day {
+    background-color: rgb(211, 211, 0);
+}
+
+/* Dark mode setting */
+#darkmode {
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
+}
+
+#darkmode .night {
+    background-color: rgb(211, 211, 0);
+    border-color: whitesmoke;
+}
+
+#darkmode .day {
+    background-color: rgb(32, 32, 32);
+    border-color: whitesmoke;
+}
+
+/* Main page */
+.topup {
+    margin: 50px 0;
+}
+
+.topup p span {
+    color: red;
+}
+
+.topgames {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 75px;
+}
+
+.topgames div {
+    flex: auto;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.topgames div:hover {
+    transform: scale(1.25);
+}
+
+.gametile {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.moregames button {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Membership section */
+.membership {
+    margin-bottom: 50px;
+}
+
+.member-form {
+    margin: 25px 0;
+}
+
+.member-form div input {
+    width: 65%;
+    height: 25px;
+    margin-bottom: 15px;
+}
+
+.btn-register {
+    margin-top: 15px;
+}
+
+/* Footer section */
+footer {
+    height: 130px;
+    background-color: rgb(211, 211, 0);
+    padding: 15px 0;
+    color: whitesmoke;
+}
+
+footer .container h4 {
+    margin-bottom: 10px;
+    font-size: 0.8em;
+}
+
+footer .container .contact p {
+    font-size: 0.8em;
+}
+
+.copyright {
+    margin-top: 20px;
+    padding-top: 5px;
+    font-size: 0.7em;
+    border-top: 1px solid whitesmoke;
+    text-align: center;
+}

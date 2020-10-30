@@ -1,0 +1,42 @@
+/* Responsive for tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 70%;
+    }
+
+    nav .logo {
+        width: 30%;
+    }
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 576px) {
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background-color: rgba(211, 211, 0, 0.8);
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+        width: 35%;
+    }
+
+    nav .logo {
+        width: 75%;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}

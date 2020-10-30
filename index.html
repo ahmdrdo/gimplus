@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GimPlus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Dark and Light Button -->
+    <div class="pagemode">
+        <span class="day" onclick="setDarkMode (false)">LIGHT</span>
+        <p></p>
+        <span class="night" onclick="setDarkMode (true)">DARK</span>
+    </div>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="https://i.ibb.co/xjv9bh8/gimplus-logo.png" alt="gimplus-logo" border="0">
+                </div>
+
+                <ul>
+                    <li><a href="#">GAME GUIDE</a></li>
+                    <li><a href="#">UPDATE</a></li>
+                    <li><a href="#">HACK & TRICK</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                </ul>
+
+                <!-- Hamburger menu icon -->
+                <div class="menu-toggle">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <script src="script.js"></script>
+            </nav>
+        </div>
+    </header>
+
+    <div class="topup">
+        <div class="container">
+            <h2>TOP GAMES</h2>
+            <p>Top up your credit here. Discount for the first top-up and weekly discount up to 30% every Friday<span>*</span>. Go get additional rewards for inviting friends using GimPlus.</p>
+            <div class="topgames">
+                <div>
+                    <a href="#">
+                        <img class="gametile" src="https://i.ibb.co/V3dC3PH/mlbb.jpg" alt="mlbb" border="0" />
+                        <p>Mobile Legends</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="gametile" src="https://i.ibb.co/t2D8YhC/pubgm.jpg" alt="pubgm" border="0" />
+                        <p>PUBG Mobile</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="gametile" src="https://i.ibb.co/ByYW6rM/chessrush.jpg" alt="chessrush" border="0" />
+                        <p>Chess Rush</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="gametile" src="https://i.ibb.co/W0336hQ/freefire.jpg" alt="freefire" border="0" />
+                        <p>Free Fire</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="gametile" src="https://i.ibb.co/C27KVGc/ragnarok.jpg" alt="ragnarok" border="0" />
+                        <p>Ragnarok</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="gametile" src="https://i.ibb.co/0mmsfSh/valorant.jpg" alt="valorant" border="0" />
+                        <p>Valorant</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="gametile" src="https://i.ibb.co/BfLVdNd/codmobile.jpg" alt="codmobile" border="0" />
+                        <p>Call of Duty Mobile</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="gametile" src="https://i.ibb.co/jzKWxZn/runeterra.jpg" alt="runeterra" border="0" />
+                        <p>Runeterra</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="gametile" src="https://i.ibb.co/zSb6gg8/onmyojiarena-tile.jpg" alt="onmyojiarena" border="0" />
+                        <p>Onmyoji Arena</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="gametile" src="https://i.ibb.co/w009Kxn/pointblank.jpg" alt="pointblank" border="0" />
+                        <p>Point Blank</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="gametile" src="https://i.ibb.co/x5B8xCL/drgonnest.jpg" alt="drgonnest" border="0" />
+                        <p>Dragon Nest</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="gametile" src="https://i.ibb.co/4WWBZPq/aov.jpg" alt="aov" border="0" />
+                        <p>Arena of Valor</p>
+                    </a>
+                </div>
+            </div>
+            <div class="moregames">
+                <button type="submit"><a href="#">More Games</a></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="membership">
+        <div class="container">
+            <h2>GIMPLUS MEMBERSHIP</h2>
+            <p>Register yourself and get special rewards every week (for only 1 game account). Rewards come according to membership class.</p>
+            <div class="member-form">
+                <div>
+                    <h5>Full Name</h5>
+                    <input type="text">
+                </div>
+                <div>
+                    <h5>Active Email</h5>
+                    <input type="email">
+                </div>
+                <div>
+                    <h5>Password</h5>
+                    <input type="text">
+                </div>
+                <div>
+                    <h5>Password Confirmation</h5>
+                    <input type="text" placeholder="Re-input your password">
+                </div>
+                <div>
+                    <h5>Membership Class</h5>
+                    <form action="">
+                        <select name="member-class">
+                            <option value="">Select One..</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                            <option value="diamond">Diamond</option>
+                        </select>
+                    </form>
+                </div>
+                <button class="btn-register" type="submit">Register</button>
+			</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <h4>PT. HALUSINASI</h4>
+            <div class="contact">
+                <p>Jl. In Aja Dulu, Visito tower, Jakarta Selatan, 12345</p>
+                <p>+62 21 1234 5678 | +62 811 1234 5678 (WhatsApp Only)</p>
+                <p>info@halusinasi.com</p>
+            </div>
+            <p class="copyright">Work by Ahmad Ridho | ahmdrdo@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
